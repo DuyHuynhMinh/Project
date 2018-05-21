@@ -40,9 +40,6 @@ public class MyLinkedList<E> {
          public void add(int index, E element) {
              
              Node newNode=new Node(element);
-             
-            
-             
              if(index>=size) {
                  add(element);
              } else if(index==0){
@@ -60,6 +57,25 @@ public class MyLinkedList<E> {
              }             
         }
          
+		public void delete(int index) {
+             if(index>=size){
+                 index =size-1;
+             }             
+             if(index==0) {
+                 first=first.next;                 
+             } else{             
+                Node x =first;
+                for(int i=0;i<index-1;++i) {
+                    x=x.next;
+                }
+                Node deletedNode = x.next;
+                Node nextNode = deletedNode.next;
+                x.next=nextNode;
+             }
+             --size;             
+         }
+
+
          public int size() {
              return size;
          }
