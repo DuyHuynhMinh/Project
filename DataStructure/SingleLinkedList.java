@@ -39,7 +39,8 @@ public class MyLinkedList<E> {
         
          public void add(int index, E element) {
              
-             Node newNode=new Node(element);
+             Node newNode=new Node(element);  
+             
              if(index>=size) {
                  add(element);
              } else if(index==0){
@@ -47,37 +48,47 @@ public class MyLinkedList<E> {
                  first =newNode;
                  ++size;
              } else{             
-                Node x = first;
-                for(int i = 0; i <index-1; ++i ){
-                    x=x.next;
-                }
+                Node<E> x = findNode(index-1);
                 newNode.next=x.next;
                 x.next=newNode;
                 ++size;
              }             
         }
          
-		public void delete(int index) {
+         public E get(int index) {               
+             return findNode(index).item;             
+         }
+         
+         public void set(int index,E data) {               
+             Node<E> x  = findNode(index);
+             x.item=data;
+         }
+         
+         public Node<E> findNode(int index) {
+             Node<E> x = first;
+             for(int i = 0 ; i <index;++i ) {
+                 x=x.next;
+             }            
+             return x;
+         }
+         
+         public int size() {
+             return size;
+         }
+         
+         public void delete(int index) {             
              if(index>=size){
                  index =size-1;
              }             
              if(index==0) {
                  first=first.next;                 
              } else{             
-                Node x =first;
-                for(int i=0;i<index-1;++i) {
-                    x=x.next;
-                }
+                Node x =findNode(index-1);
                 Node deletedNode = x.next;
                 Node nextNode = deletedNode.next;
                 x.next=nextNode;
              }
              --size;             
-         }
-
-
-         public int size() {
-             return size;
          }
         
         public void printList() {
