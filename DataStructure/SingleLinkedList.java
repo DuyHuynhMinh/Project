@@ -41,14 +41,20 @@ public class MyLinkedList<E> {
              
              Node newNode=new Node(element);
              
+            
+             
              if(index>=size) {
                  add(element);
+             } else if(index==0){
+                 newNode.next=first;
+                 first =newNode;
+                 ++size;
              } else{             
                 Node x = first;
                 for(int i = 0; i <index-1; ++i ){
                     x=x.next;
                 }
-                 newNode.next=x.next;
+                newNode.next=x.next;
                 x.next=newNode;
                 ++size;
              }             
