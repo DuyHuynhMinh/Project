@@ -1,44 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="5dp"
-           >
+            android:layout_margin="5dp" >
 
             <TextView
                 android:id="@+id/txt1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="15dp"
-                android:text="@string/F9"
-                />
+                android:text="@string/F9"/>
 
             <Button
                 android:id="@+id/R1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/R9.1"
-                />
+                android:text="@string/R9.1" />
 
             <Button
                 android:id="@+id/R2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/R9.2"
-                />
-        </TableRow>
+                android:text="@string/R9.2"/>
 
+        </TableRow>
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -209,8 +212,10 @@
                 android:id="@+id/R16"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/R2.2" />
-        </TableRow><TableRow
+                android:text="@string/R2.2"  />
+        </TableRow>
+
+        <TableRow
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="5dp">
@@ -237,7 +242,8 @@
             android:onClick="controlRoom2"/>
     </TableRow>
 
-
-
     </TableLayout>
+   </HorizontalScrollView>
 </android.support.constraint.ConstraintLayout>
+</ScrollView>
+
