@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.activemq:artemis-commons:2.6.3.jbossorg-001">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/activemq/artemis-commons/2.6.3.jbossorg-001/artemis-commons-2.6.3.jbossorg-001.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/activemq/artemis-commons/2.6.3.jbossorg-001/artemis-commons-2.6.3.jbossorg-001-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/activemq/artemis-commons/2.6.3.jbossorg-001/artemis-commons-2.6.3.jbossorg-001-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
