@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/JavaTakeNote.iml" filepath="$PROJECT_DIR$/JavaTakeNote.iml" />
       <module fileurl="file://$PROJECT_DIR$/gateway/tools/OCMessage/OCMessage.iml" filepath="$PROJECT_DIR$/gateway/tools/OCMessage/OCMessage.iml" />
       <module fileurl="file://$PROJECT_DIR$/gateway/gateway.iml" filepath="$PROJECT_DIR$/gateway/gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway/mysql/mysql.iml" filepath="$PROJECT_DIR$/gateway/mysql/mysql.iml" />
       <module fileurl="file://$PROJECT_DIR$/gateway/tools/tools.iml" filepath="$PROJECT_DIR$/gateway/tools/tools.iml" />
     </modules>
   </component>

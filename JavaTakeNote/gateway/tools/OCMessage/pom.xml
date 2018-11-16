@@ -32,6 +32,11 @@
             <artifactId>netty-buffer</artifactId>
             <version>4.1.31.Final</version>
         </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.6</version>
+        </dependency>
     </dependencies>
 
 

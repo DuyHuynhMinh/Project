@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="mysql" />
         <module name="OCMessage" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="gateway" target="1.5" />
+      <module name="mysql" target="1.5" />
       <module name="OCMessage" target="1.5" />
       <module name="tools" target="1.5" />
     </bytecodeTargetLevel>

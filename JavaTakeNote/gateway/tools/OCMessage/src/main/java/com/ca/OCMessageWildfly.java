@@ -1,10 +1,15 @@
 package com.ca;
 
+import org.apache.commons.io.IOUtils;
 import org.wildfly.naming.client.WildFlyInitialContext;
+
 
 import javax.jms.*;
 import javax.naming.Context;
 import javax.naming.NamingException;
+import java.io.File;
+import java.io.IOException;
+import java.net.URI;
 import java.util.Properties;
 
 public class OCMessageWildfly {
@@ -14,8 +19,10 @@ public class OCMessageWildfly {
     private static QueueSession session = null;
     private static Queue queue = null;
 
-    private static String user = "admin";
-    private static String password ="admin";
+    private static String directory="d:\\InputData\\";
+
+    private static String user = "app";
+    private static String password ="app";
 
     public static void main(String []arg) {
         System.out.println("Start");
@@ -44,14 +51,20 @@ public class OCMessageWildfly {
         try {
             QueueSender sender = session.createSender( queue );
             conn.start();
-            String message = "Hello Wildfly";
-            TextMessage txtMessage = session.createTextMessage( message );
-            sender.send(txtMessage);
+            File files =new File(directory);
+            File []arrFiles = files.listFiles();
+            for(File file : arrFiles) {
+                URI uri = file.toURI();
+                String message = IOUtils.toString(uri,"UTF-8");
+                TextMessage txtMessage = session.createTextMessage( message );
+                sender.send(txtMessage);
+            }
         } catch (JMSException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
             e.printStackTrace();
         }
         System.out.println("Message is send successfully");
-
     }
 
     public static void receiveMessage() {
