@@ -22,6 +22,8 @@ public class MainMySQL {
 
         writeData();
 
+        //readData();
+
         System.out.println("Finish");
 
 
@@ -39,10 +41,16 @@ public class MainMySQL {
     public static void writeData() {
         DiskDrive diskDrive = new DiskDrive();
         diskDrive.setVendor("F5");
-        diskDrive.setValue(1500);
+        diskDrive.setValue(190);
         session.save(diskDrive);
         session.getTransaction().commit();
         session.close();
+    }
+
+    public static void readData() {
+        DiskDrive diskDrive = (DiskDrive) session.get(DiskDrive.class,1);
+        System.out.println("Result : " + diskDrive.getVendor() );
+
     }
 
 
