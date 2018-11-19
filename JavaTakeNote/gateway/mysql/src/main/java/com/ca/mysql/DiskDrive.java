@@ -1,10 +1,14 @@
 package com.ca.mysql;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name="DiskDrive")
-public class DiskDrive {
+public class DiskDrive implements Serializable {
+
+
+    private static final long serialVersionUID = 1L;
 
     @Id
     @Column(name="id")

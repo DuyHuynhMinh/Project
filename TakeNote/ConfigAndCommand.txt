@@ -1,0 +1,34 @@
+- Maven : 
+
+	Link maven : http://repo1.maven.org/maven2/
+
+	mvn clean : Used to clean the project
+	mvn install : Used to build, install, and test the project and create the packages
+	mvn test : Used only to execute test cases
+	mvn clean install :  command will execute both the commands
+	mvn clean install -DskipTests : skip tests
+
+- WildFly:
+	Start : e:\Software\wildfly-14.0.1.Final\bin>standalone.bat
+	Manage GUI : e:\Software\wildfly-14.0.1.Final\bin>jboss-cli.bat --gui
+	
+	Deploy war file : 
+		$ ./bin/jboss-cli.sh --connect
+		[standalone@localhost:9990 /] deploy example.war 
+
+	Undeploy war file :
+		$ ./bin/jboss-cli.sh --connect
+		[standalone@localhost:9990 /] undeploy example.war 
+
+	Add application User : ./add-user.sh -a -u 'data' -p 'data' -g 'guest'
+
+	Deploy Message : 
+		java -cp oc-message-publisher-jar-with-dependencies.jar com.ca.em.sdn.tools.cli.OCMessagePublisherCLI --user app --password guest -n localhost -p 8080 /DATA
+
+- Mysql : 
+
+
+
+
+
+	
