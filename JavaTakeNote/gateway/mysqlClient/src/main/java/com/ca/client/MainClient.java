@@ -3,7 +3,7 @@ package com.ca.client;
 import com.ca.mysql.DiskDrive;
 import com.ca.mysql.Hardware;
 import com.ca.mysqlEJB.DiskDriveEJBRemote;
-import com.ca.mysqlEJB.ORMObject;
+
 
 import javax.naming.Context;
 import javax.naming.InitialContext;
@@ -27,7 +27,7 @@ public static void writeDataWildfly() {
 
         try {
         Context context = new InitialContext();
-        DiskDriveEJBRemote diskEJB = (DiskDriveEJBRemote)context.lookup("mysql-1.0-SNAPSHOT/DiskDriveEJB!com.ca.mysqlEJB.DiskDriveEJBRemote");
+        DiskDriveEJBRemote diskEJB = (DiskDriveEJBRemote)context.lookup("mysql-ear/gateway-mysql-ejb-1.0-SNAPSHOT/DiskDriveEJB!com.ca.mysqlEJB.DiskDriveEJBRemote");
 
         DiskDrive diskDrive = new DiskDrive();
         diskDrive.setVendor("Cisco");
@@ -35,8 +35,8 @@ public static void writeDataWildfly() {
         diskEJB.addData(diskDrive);
 
         Hardware hardware = new Hardware();
-        hardware.setVendor("F5");
-        hardware.setValue(100);
+        hardware.setVendor("Huawe");
+        hardware.setValue(800);
         diskEJB.addData(hardware);
 
     } catch (NamingException e) {

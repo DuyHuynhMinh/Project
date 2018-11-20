@@ -12,6 +12,8 @@
         <module>tools</module>
         <module>mysql</module>
         <module>mysqlClient</module>
+        <module>mysql-web</module>
+        <module>mysql-ear</module>
     </modules>
 
 

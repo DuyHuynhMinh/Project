@@ -12,13 +12,13 @@ public class DiskDriveEJB  implements DiskDriveEJBRemote {
     @PersistenceContext(unitName="primary")
     private  EntityManager em;
 
-    @Override
-    public void addData(ORMObject obj) {
+
+    public void addData(Object obj) {
         //em.persist(obj);
         ((Session)em.getDelegate()).saveOrUpdate(obj);
     }
 
-    @Override
+
     public Object getData(Class<?> c, int id) {
          //return em.find(c,id);
         return ((Session)em.getDelegate()).get(c,id);

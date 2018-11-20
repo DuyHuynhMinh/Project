@@ -1,13 +1,13 @@
 package com.ca.mysql;
 
-import com.ca.mysqlEJB.ORMObject;
+
 
 import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
 @Table(name="Hardware")
-public class Hardware  extends ORMObject implements Serializable {
+public class Hardware  implements Serializable {
 
     private static final long serialVersionUID = 1L;
 

@@ -7,6 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="mysql" />
+        <module name="mysql-ear" />
+        <module name="mysql-web" />
         <module name="mysqlClient" />
         <module name="OCMessage" />
       </profile>
@@ -14,6 +16,8 @@
     <bytecodeTargetLevel>
       <module name="gateway" target="1.5" />
       <module name="mysql" target="1.5" />
+      <module name="mysql-ear" target="1.5" />
+      <module name="mysql-web" target="1.5" />
       <module name="mysqlClient" target="6" />
       <module name="OCMessage" target="1.5" />
       <module name="tools" target="1.5" />

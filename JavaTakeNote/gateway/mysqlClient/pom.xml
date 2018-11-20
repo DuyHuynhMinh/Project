@@ -50,7 +50,7 @@
         </dependency>
         <dependency>
             <groupId>gateway</groupId>
-            <artifactId>mysql</artifactId>
+            <artifactId>mysql-ejb</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
