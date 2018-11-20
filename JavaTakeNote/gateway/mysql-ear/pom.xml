@@ -29,7 +29,6 @@
     </dependencies>
 
     <build>
-        <finalName>${project.artifactId}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -42,7 +41,6 @@
                         are in easy way to package any libraries needed in the ear, and automatically
                         have any modules (EJB-JARs and WARs) use them -->
                     <defaultLibBundleDir>lib</defaultLibBundleDir>
-
                 </configuration>
             </plugin>
         </plugins>
