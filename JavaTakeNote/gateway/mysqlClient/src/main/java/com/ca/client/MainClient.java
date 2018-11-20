@@ -2,6 +2,7 @@ package com.ca.client;
 
 import com.ca.mysql.DiskDrive;
 import com.ca.mysqlEJB.DiskDriveEJBRemote;
+import com.ca.mysqlEJB.ORMObject;
 
 import javax.naming.Context;
 import javax.naming.InitialContext;
@@ -27,15 +28,16 @@ public static void writeDataWildfly() {
         Context context = new InitialContext();
         DiskDriveEJBRemote diskEJB = (DiskDriveEJBRemote)context.lookup("mysql-1.0-SNAPSHOT/DiskDriveEJB!com.ca.mysqlEJB.DiskDriveEJBRemote");
 
-        System.out.println(diskEJB + "\n");
 
         DiskDrive diskDrive = new DiskDrive();
+        //diskDrive.setVendor("Juniper");
+        //diskDrive.setValue(300);
+        //diskEJB.addData(diskDrive);
 
+        diskDrive = (DiskDrive)diskEJB.getData(DiskDrive.class,5);
 
-        diskDrive.setVendor("Juniper");
-        diskDrive.setValue(500);
+        System.out.println("Vendor : " + diskDrive.getVendor() + " Value : " + diskDrive.getValue());
 
-        diskEJB.addData(diskDrive);
 
     } catch (NamingException e) {
         e.printStackTrace();

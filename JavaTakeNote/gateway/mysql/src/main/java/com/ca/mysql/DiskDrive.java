@@ -1,11 +1,13 @@
 package com.ca.mysql;
 
+import com.ca.mysqlEJB.ORMObject;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
 @Table(name="DiskDrive")
-public class DiskDrive implements Serializable {
+public class DiskDrive extends ORMObject implements Serializable  {
 
 
     private static final long serialVersionUID = 1L;
@@ -21,10 +23,10 @@ public class DiskDrive implements Serializable {
     @Column
     private double value;
 
-    public void setId(int id) {
+    public void setIdDiskDrive(int id) {
         this.id = id;
     }
-    public int getId() {
+    public int getIdDiskDrive() {
         return id;
     }
     public void setValue(double value) {
