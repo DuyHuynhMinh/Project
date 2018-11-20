@@ -1,6 +1,7 @@
 package com.ca.client;
 
 import com.ca.mysql.DiskDrive;
+import com.ca.mysql.Hardware;
 import com.ca.mysqlEJB.DiskDriveEJBRemote;
 import com.ca.mysqlEJB.ORMObject;
 
@@ -23,25 +24,26 @@ public class MainClient {
 }
 
 public static void writeDataWildfly() {
-    try {
 
+        try {
         Context context = new InitialContext();
         DiskDriveEJBRemote diskEJB = (DiskDriveEJBRemote)context.lookup("mysql-1.0-SNAPSHOT/DiskDriveEJB!com.ca.mysqlEJB.DiskDriveEJBRemote");
 
-
         DiskDrive diskDrive = new DiskDrive();
-        //diskDrive.setVendor("Juniper");
-        //diskDrive.setValue(300);
-        //diskEJB.addData(diskDrive);
+        diskDrive.setVendor("Cisco");
+        diskDrive.setValue(400);
+        diskEJB.addData(diskDrive);
 
-        diskDrive = (DiskDrive)diskEJB.getData(DiskDrive.class,5);
-
-        System.out.println("Vendor : " + diskDrive.getVendor() + " Value : " + diskDrive.getValue());
-
+        Hardware hardware = new Hardware();
+        hardware.setVendor("F5");
+        hardware.setValue(100);
+        diskEJB.addData(hardware);
 
     } catch (NamingException e) {
         e.printStackTrace();
     }
+
+
 
 }
 

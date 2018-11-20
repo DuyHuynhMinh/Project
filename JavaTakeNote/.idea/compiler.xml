@@ -14,7 +14,7 @@
     <bytecodeTargetLevel>
       <module name="gateway" target="1.5" />
       <module name="mysql" target="6" />
-      <module name="mysqlClient" target="1.5" />
+      <module name="mysqlClient" target="6" />
       <module name="OCMessage" target="1.5" />
       <module name="tools" target="1.5" />
     </bytecodeTargetLevel>
