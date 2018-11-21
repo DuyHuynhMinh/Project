@@ -27,7 +27,7 @@ public static void writeDataWildfly() {
 
         try {
         Context context = new InitialContext();
-        DiskDriveEJBRemote diskEJB = (DiskDriveEJBRemote)context.lookup("mysql-ear/gateway-mysql-ejb-1.0-SNAPSHOT/DiskDriveEJB!com.ca.mysqlEJB.DiskDriveEJBRemote");
+        DiskDriveEJBRemote diskEJB = (DiskDriveEJBRemote)context.lookup("gateway-mysql-ejb-1.0-SNAPSHOT/DiskDriveEJB!com.ca.mysqlEJB.DiskDriveEJBRemote");
 
         DiskDrive diskDrive = new DiskDrive();
         diskDrive.setVendor("Cisco");

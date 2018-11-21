@@ -12,35 +12,36 @@
     <artifactId>mysql-ear</artifactId>
     <packaging>ear</packaging>
     <dependencies>
-
-        <!-- Depend on the ejb module and war so that we can package them -->
-        <dependency>
-            <groupId>gateway</groupId>
-            <artifactId>mysql-web</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <type>war</type>
-        </dependency>
         <dependency>
             <groupId>gateway</groupId>
             <artifactId>mysql-ejb</artifactId>
             <version>1.0-SNAPSHOT</version>
             <type>ejb</type>
         </dependency>
+        <dependency>
+            <groupId>org.dom4j</groupId>
+            <artifactId>dom4j</artifactId>
+            <version>2.1.1</version>
+        </dependency>
     </dependencies>
 
     <build>
         <plugins>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-ear-plugin</artifactId>
                 <version>3.0.1</version>
                 <configuration>
-                    <!-- Tell Maven we are using Java EE 6 -->
-                    <version>6</version>
-                    <!-- Use Java EE ear libraries as needed. Java EE ear libraries
-                        are in easy way to package any libraries needed in the ear, and automatically
-                        have any modules (EJB-JARs and WARs) use them -->
                     <defaultLibBundleDir>lib</defaultLibBundleDir>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                        </manifest>
+                        <manifestEntries>
+                            <Dependencies>org.dom4j export</Dependencies>
+                        </manifestEntries>
+                    </archive>
+                    <applicationName>oc</applicationName>
+                    <version>8</version>
                 </configuration>
             </plugin>
         </plugins>

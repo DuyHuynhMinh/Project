@@ -8,7 +8,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="mysql" />
         <module name="mysql-ear" />
-        <module name="mysql-web" />
         <module name="mysqlClient" />
         <module name="OCMessage" />
       </profile>
