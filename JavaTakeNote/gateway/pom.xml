@@ -10,9 +10,9 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>tools</module>
-        <module>mysql</module>
         <module>mysqlClient</module>
         <module>mysql-ear</module>
+        <module>mysql-ejb</module>
     </modules>
 
 

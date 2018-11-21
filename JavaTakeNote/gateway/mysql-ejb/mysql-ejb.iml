@@ -23,11 +23,11 @@
     <orderEntry type="library" name="Maven: javax.activation:javax.activation-api:1.2.0" level="project" />
     <orderEntry type="library" name="Maven: org.dom4j:dom4j:2.1.1" level="project" />
     <orderEntry type="library" name="Maven: org.hibernate.common:hibernate-commons-annotations:5.0.4.Final" level="project" />
-    <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.47" level="project" />
+    <orderEntry type="library" name="Maven: mysql:mysql-connector-java:8.0.13" level="project" />
+    <orderEntry type="library" name="Maven: com.google.protobuf:protobuf-java:3.6.1" level="project" />
     <orderEntry type="library" name="Maven: org.hibernate:hibernate-entitymanager:5.3.7.Final" level="project" />
     <orderEntry type="library" name="Maven: javax.ejb:javax.ejb-api:3.2" level="project" />
     <orderEntry type="library" name="Maven: javax.transaction:javax.transaction-api:1.2" level="project" />
-    <orderEntry type="module" module-name="mysql-ejb" />
     <orderEntry type="library" name="Maven: commons-beanutils:commons-beanutils:1.9.3" level="project" />
     <orderEntry type="library" name="Maven: commons-collections:commons-collections:3.2.2" level="project" />
     <orderEntry type="library" name="Maven: io.netty:netty-all:4.1.25.Final" level="project" />
@@ -58,14 +58,10 @@
     <orderEntry type="library" name="Maven: org.jgroups:jgroups:4.0.13.Final" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:jcl-over-slf4j:1.7.22.jbossorg-1" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.22.jbossorg-1" level="project" />
+    <orderEntry type="library" name="Maven: org.wildfly:wildfly-naming-client:1.0.9.Final" level="project" />
     <orderEntry type="library" name="Maven: org.wildfly.common:wildfly-common:1.4.0.Final" level="project" />
     <orderEntry type="library" name="Maven: org.wildfly.client:wildfly-client-config:1.0.1.Final" level="project" />
     <orderEntry type="library" name="Maven: org.wildfly.security:wildfly-elytron:1.6.0.Final" level="project" />
     <orderEntry type="library" name="Maven: com.google.guava:guava:25.0-jre" level="project" />
-    <orderEntry type="library" name="Maven: org.wildfly:wildfly-naming-client:1.0.9.Final" level="project" />
-    <orderEntry type="library" name="Maven: org.jboss:jboss-ejb-client:4.0.12.Final" level="project" />
-    <orderEntry type="library" name="Maven: org.jboss.spec.javax.ejb:jboss-ejb-api_3.2_spec:1.0.0.Final" level="project" />
-    <orderEntry type="library" name="Maven: org.wildfly.discovery:wildfly-discovery-client:1.0.0.Final" level="project" />
-    <orderEntry type="library" name="Maven: org.wildfly.transaction:wildfly-transaction-client:1.0.2.Final" level="project" />
   </component>
 </module>

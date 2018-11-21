@@ -1,11 +1,7 @@
 package com.ca.client;
 
-import com.ca.mysql.DiskDrive;
-import com.ca.mysql.Hardware;
-import com.ca.mysqlEJB.DiskDriveEJBRemote;
 
 
-import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import javax.persistence.EntityManager;
@@ -27,12 +23,7 @@ public static void writeDataWildfly() {
 
         //try {
 
-    try {
-        InitialContext.doLookup("java:/jms/topic/ClientUpdateTopic");
-    } catch (NamingException e) {
-        e.printStackTrace();
-    }
-       /* DiskDriveEJBRemote diskEJB = InitialContext.doLookup("jms/RemoteConnectionFactory");
+           /* DiskDriveEJBRemote diskEJB = InitialContext.doLookup("jms/RemoteConnectionFactory");
 
         DiskDrive diskDrive = new DiskDrive();
         diskDrive.setVendor("Cisco");
@@ -53,7 +44,7 @@ public static void writeDataWildfly() {
 }
 
     public static void writeDataWithoutWildfly() {
-        EntityManagerFactory emf  = Persistence.createEntityManagerFactory("primary");
+        /*EntityManagerFactory emf  = Persistence.createEntityManagerFactory("brokerPU");
         EntityManager em = emf.createEntityManager();
         em.getTransaction().begin();
         DiskDrive diskDrive = new DiskDrive();
@@ -62,6 +53,6 @@ public static void writeDataWildfly() {
         em.persist(diskDrive);
         em.getTransaction().commit();
         em.close();
-        emf.close();
+        emf.close();*/
     }
 }

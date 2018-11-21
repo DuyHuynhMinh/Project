@@ -5,13 +5,13 @@
              xsi:schemaLocation="
         http://xmlns.jcp.org/xml/ns/persistence
         http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
-    <persistence-unit name="primary" transaction-type="JTA">
+    <persistence-unit name="brokerPU" transaction-type="JTA">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <jta-data-source>java:jboss/datasources/MySQLDS</jta-data-source>
         <class>com.ca.mysql.DiskDrive</class>
         <properties>
             <!-- Properties for Hibernate -->
-            <property name="jboss.entity.manager.jndi.name" value="java:/primary"/>
+            <property name="jboss.entity.manager.jndi.name" value="java:/brokerPU"/>
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect"/>
             <property name="hibernate.hbm2ddl.auto" value="update" />
             <property name="hibernate.show_sql" value="true" />

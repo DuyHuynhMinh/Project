@@ -1,5 +1,4 @@
-package com.ca.mysql;
-
+package com.ca.mysqlEJB;
 
 
 import javax.persistence.*;
@@ -7,7 +6,7 @@ import java.io.Serializable;
 
 @Entity
 @Table(name="Hardware")
-public class Hardware  implements Serializable {
+public class HardwareEntity  implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
@@ -42,6 +41,5 @@ public class Hardware  implements Serializable {
     public String getVendor() {
         return vendor;
     }
-
 
 }
