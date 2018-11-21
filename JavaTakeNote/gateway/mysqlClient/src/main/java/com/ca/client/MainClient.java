@@ -26,8 +26,8 @@ public class MainClient {
 public static void writeDataWildfly() {
 
         try {
-        Context context = new InitialContext();
-        DiskDriveEJBRemote diskEJB = (DiskDriveEJBRemote)context.lookup("gateway-mysql-ejb-1.0-SNAPSHOT/DiskDriveEJB!com.ca.mysqlEJB.DiskDriveEJBRemote");
+
+        DiskDriveEJBRemote diskEJB = InitialContext.doLookup("oc/gateway-mysql-ejb-1.0-SNAPSHOT/DiskDriveEJB!com.ca.mysqlEJB.DiskDriveEJBRemote");
 
         DiskDrive diskDrive = new DiskDrive();
         diskDrive.setVendor("Cisco");
@@ -35,8 +35,8 @@ public static void writeDataWildfly() {
         diskEJB.addData(diskDrive);
 
         Hardware hardware = new Hardware();
-        hardware.setVendor("Huawe");
-        hardware.setValue(800);
+        hardware.setVendor("F7");
+        hardware.setValue(500);
         diskEJB.addData(hardware);
 
     } catch (NamingException e) {
