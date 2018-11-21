@@ -25,9 +25,14 @@ public class MainClient {
 
 public static void writeDataWildfly() {
 
-        try {
+        //try {
 
-        DiskDriveEJBRemote diskEJB = InitialContext.doLookup("oc/gateway-mysql-ejb-1.0-SNAPSHOT/DiskDriveEJB!com.ca.mysqlEJB.DiskDriveEJBRemote");
+    try {
+        InitialContext.doLookup("java:/jms/topic/ClientUpdateTopic");
+    } catch (NamingException e) {
+        e.printStackTrace();
+    }
+       /* DiskDriveEJBRemote diskEJB = InitialContext.doLookup("jms/RemoteConnectionFactory");
 
         DiskDrive diskDrive = new DiskDrive();
         diskDrive.setVendor("Cisco");
@@ -42,7 +47,7 @@ public static void writeDataWildfly() {
     } catch (NamingException e) {
         e.printStackTrace();
     }
-
+*/
 
 
 }
