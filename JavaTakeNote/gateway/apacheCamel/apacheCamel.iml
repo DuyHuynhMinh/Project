@@ -15,5 +15,19 @@
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.25" level="project" />
     <orderEntry type="library" name="Maven: com.sun.xml.bind:jaxb-core:2.3.0.1" level="project" />
     <orderEntry type="library" name="Maven: com.sun.xml.bind:jaxb-impl:2.3.0.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.camel:camel-jms:2.22.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.camel:camel-spring:2.22.2" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-core:5.0.10.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-jcl:5.0.10.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-aop:5.0.10.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-expression:5.0.10.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-jms:5.0.10.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-messaging:5.0.10.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-context:5.0.10.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-tx:5.0.10.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-beans:5.0.10.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.geronimo.specs:geronimo-jms_2.0_spec:1.0-alpha-2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.activemq:activemq-all:5.15.8" level="project" />
+    <orderEntry type="library" name="Maven: javax.jms:javax.jms-api:2.0.1" level="project" />
   </component>
 </module>
