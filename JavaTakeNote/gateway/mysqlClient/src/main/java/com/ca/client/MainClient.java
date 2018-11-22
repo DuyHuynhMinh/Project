@@ -2,6 +2,7 @@ package com.ca.client;
 
 
 
+import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import javax.persistence.EntityManager;
@@ -21,14 +22,10 @@ public class MainClient {
 
 public static void writeDataWildfly() {
 
-        //try {
+
+    //try {
 
            /* DiskDriveEJBRemote diskEJB = InitialContext.doLookup("jms/RemoteConnectionFactory");
-
-        DiskDrive diskDrive = new DiskDrive();
-        diskDrive.setVendor("Cisco");
-        diskDrive.setValue(400);
-        diskEJB.addData(diskDrive);
 
         Hardware hardware = new Hardware();
         hardware.setVendor("F7");

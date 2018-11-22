@@ -13,6 +13,7 @@
         <module>mysqlClient</module>
         <module>mysql-ear</module>
         <module>mysql-ejb</module>
+        <module>apacheCamel</module>
     </modules>
 
 
