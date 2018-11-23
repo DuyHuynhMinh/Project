@@ -15,7 +15,7 @@ public class MainCamel {
                 new ActiveMQConnectionFactory(hostTCP);
         ManageCamel manageCamel = ManageCamel.getInstance();
        manageCamel.getObject(new SendFileWithProcessor(),connectionFactory).process();
-      // manageCamel.getObject(new ContentBasedRouter(),connectionFactory).process();
+       manageCamel.getObject(new GetMessageActiveMQ2File(),connectionFactory).process();
 
         System.out.println("End ");
     }

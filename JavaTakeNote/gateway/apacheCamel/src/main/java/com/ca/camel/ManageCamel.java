@@ -7,6 +7,7 @@ import org.apache.camel.impl.DefaultCamelContext;
 
 import javax.jms.ConnectionFactory;
 
+
 public class ManageCamel {
 
 
