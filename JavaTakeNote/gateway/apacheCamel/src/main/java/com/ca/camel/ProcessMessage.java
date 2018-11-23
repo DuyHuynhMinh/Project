@@ -10,10 +10,11 @@ import java.io.IOException;
 public class ProcessMessage implements Processor {
     public void process(Exchange exchange) throws Exception {
 
-        String message  = exchange.getIn().getBody(String.class);
-        Message messageObj = convertToJson(message);
+        //String message  = exchange.getIn().getBody(String.class);
+       // Message messageObj = convertToJson(message);
 
-        exchange.getIn().setBody(messageObj);
+      // exchange.getIn().setBody(messageObj);
+        System.out.println ("Recieving Message ");
 
     }
 

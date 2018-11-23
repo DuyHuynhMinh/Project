@@ -13,8 +13,6 @@ public class ManageCamel {
 
     private ManageCamel() {}
     private static ManageCamel instance = null;
-    private  RouteBuilder r=null;
-    private  CamelContext camelContext = new DefaultCamelContext();
 
     public static ManageCamel getInstance() {
         if(instance ==null) {
@@ -23,7 +21,9 @@ public class ManageCamel {
         return instance;
     }
 
-    public void process() {
+    public void process(RouteBuilder r, ConnectionFactory connectionFactory) {
+        CamelContext camelContext = new DefaultCamelContext();
+        camelContext.addComponent("activemq", JmsComponent.jmsComponentAutoAcknowledge(connectionFactory));
         try {
             camelContext.addRoutes(r);
             camelContext.start();
@@ -32,21 +32,6 @@ public class ManageCamel {
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }
-
-    public ManageCamel getObject(RouteBuilder r) {
-        this.r = r;
-        return this;
-    }
-    public ManageCamel getObject(RouteBuilder r, ConnectionFactory connectionFactory) {
-
-        /*String hostVM = "vm:localhost";
-        String hostTCP = "tcp://0.0.0.0:61616";
-        ConnectionFactory connectionFactory =
-                new ActiveMQConnectionFactory(hostTCP);*/
-
-        camelContext.addComponent("activemq", JmsComponent.jmsComponentAutoAcknowledge(connectionFactory));
-        return getObject(r);
     }
 
 }
