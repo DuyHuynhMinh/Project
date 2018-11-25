@@ -6,6 +6,7 @@ import org.wildfly.naming.client.WildFlyInitialContext;
 
 import javax.jms.*;
 import javax.naming.Context;
+import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import java.io.File;
 import java.io.IOException;
@@ -30,6 +31,7 @@ public class OCMessageWildfly {
         sendMessage();
         receiveMessage();
         System.out.println("End");
+
     }
     public static void init() {
         Properties p = new Properties();

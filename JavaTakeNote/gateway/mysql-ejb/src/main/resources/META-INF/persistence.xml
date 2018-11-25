@@ -8,7 +8,7 @@
     <persistence-unit name="brokerPU" transaction-type="JTA">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <jta-data-source>java:jboss/datasources/MySQLDS</jta-data-source>
-        <class>com.ca.mysql.DiskDrive</class>
+        <class>com.ca.mysqlEJB.HardwareEntity</class>
         <properties>
             <!-- Properties for Hibernate -->
             <property name="jboss.entity.manager.jndi.name" value="java:/brokerPU"/>

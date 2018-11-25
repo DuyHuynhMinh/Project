@@ -2,6 +2,9 @@ package com.ca.client;
 
 
 
+import com.ca.mysqlEJB.HardwareEntity;
+import com.ca.mysqlEJB.HardwareRemote;
+
 import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
@@ -23,19 +26,19 @@ public class MainClient {
 public static void writeDataWildfly() {
 
 
-    //try {
+    try {
 
-           /* DiskDriveEJBRemote diskEJB = InitialContext.doLookup("jms/RemoteConnectionFactory");
+            HardwareRemote diskEJB = InitialContext.doLookup("oc/gateway-mysql-ejb-1.0-SNAPSHOT/HardwareBeanFadace!com.ca.mysqlEJB.HardwareRemote");
 
-        Hardware hardware = new Hardware();
-        hardware.setVendor("F7");
+        HardwareEntity hardware = new HardwareEntity();
+        hardware.setVendor("Cisco");
         hardware.setValue(500);
         diskEJB.addData(hardware);
 
     } catch (NamingException e) {
         e.printStackTrace();
     }
-*/
+
 
 
 }

@@ -14,7 +14,22 @@
         <module>mysql-ear</module>
         <module>mysql-ejb</module>
         <module>apacheCamel</module>
+        <module>web</module>
     </modules>
+    <dependencies>
+
+
+        <dependency>
+            <groupId>dom4j</groupId>
+            <artifactId>dom4j</artifactId>
+            <version>1.6.1</version>
+        </dependency>
+
+
+    </dependencies>
+
+
+
 
 
 

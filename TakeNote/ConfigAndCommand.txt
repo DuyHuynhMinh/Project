@@ -1,3 +1,11 @@
+- MEP : Message Exchange Patterns
+- WSDL : WebService Description Language 
+- JBI : Java Business Integration
+- NMR : Normalized Messages Router
+- JMX : Java Management Extension 
+- EAP : Enterprise Application Platform 
+
+
 - Maven : 
 
 	Link maven : http://repo1.maven.org/maven2/

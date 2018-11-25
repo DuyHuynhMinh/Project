@@ -11,6 +11,7 @@
         <module name="mysql-ejb" />
         <module name="mysqlClient" />
         <module name="OCMessage" />
+        <module name="web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -23,6 +24,7 @@
       <module name="mysqlClient" target="6" />
       <module name="OCMessage" target="1.5" />
       <module name="tools" target="1.5" />
+      <module name="web" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

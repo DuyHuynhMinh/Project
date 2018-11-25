@@ -9,32 +9,33 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>mysql-ear</artifactId>
-    <packaging>ear</packaging>
+    <artifactId>web</artifactId>
+    <packaging>war</packaging>
     <dependencies>
 
-        <dependency>
-            <groupId>gateway</groupId>
-            <artifactId>web</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <type>war</type>
-        </dependency>
         <dependency>
             <groupId>gateway</groupId>
             <artifactId>mysql-ejb</artifactId>
             <version>1.0-SNAPSHOT</version>
             <type>ejb</type>
+            <scope>provided</scope>
         </dependency>
-
+    <dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>servlet-api</artifactId>
+        <version>2.5</version>
+        <scope>provided</scope>
+    </dependency>
     </dependencies>
 
     <build>
         <plugins>
             <plugin>
-                <artifactId>maven-ear-plugin</artifactId>
-                <version>3.0.1</version>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.2.2</version>
                 <configuration>
-                    <defaultLibBundleDir>lib</defaultLibBundleDir>
+                    <!-- Java EE 6 doesn't require web.xml, Maven needs to catch up! -->
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
@@ -43,13 +44,10 @@
                             <Dependencies>org.dom4j export</Dependencies>
                         </manifestEntries>
                     </archive>
-                    <applicationName>oc</applicationName>
-                    <version>8</version>
                 </configuration>
             </plugin>
         </plugins>
     </build>
-
 
 
 </project>
