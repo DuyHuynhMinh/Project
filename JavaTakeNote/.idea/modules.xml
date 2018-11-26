@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/gateway/tools/OCMessage/OCMessage.iml" filepath="$PROJECT_DIR$/gateway/tools/OCMessage/OCMessage.iml" />
       <module fileurl="file://$PROJECT_DIR$/gateway/apacheCamel/apacheCamel.iml" filepath="$PROJECT_DIR$/gateway/apacheCamel/apacheCamel.iml" />
       <module fileurl="file://$PROJECT_DIR$/gateway/gateway.iml" filepath="$PROJECT_DIR$/gateway/gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway/hibernate-manage/hibernate-manage.iml" filepath="$PROJECT_DIR$/gateway/hibernate-manage/hibernate-manage.iml" />
       <module fileurl="file://$PROJECT_DIR$/gateway/mysql-ear/mysql-ear.iml" filepath="$PROJECT_DIR$/gateway/mysql-ear/mysql-ear.iml" />
       <module fileurl="file://$PROJECT_DIR$/gateway/mysql-ejb/mysql-ejb.iml" filepath="$PROJECT_DIR$/gateway/mysql-ejb/mysql-ejb.iml" />
       <module fileurl="file://$PROJECT_DIR$/gateway/mysqlClient/mysqlClient.iml" filepath="$PROJECT_DIR$/gateway/mysqlClient/mysqlClient.iml" />

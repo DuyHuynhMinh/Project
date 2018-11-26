@@ -2,7 +2,7 @@
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
-<%@ page import="org.hibernate.Session,java.util.*,javax.naming.*,javax.persistence.EntityManager,com.ca.mysqlEJB.HardwareEntity"%>
+<%@ page import="com.ca.hibernatemanage.*"%>
 <html>
 <head>
 <meta http-equiv="Content-Type"
@@ -13,13 +13,10 @@
 	<%
 	out.println("Test Server ");
 
-    EntityManager em = InitialContext.doLookup("java:/brokerPU");
+	ProcessData pro = new ProcessData();
 
-    HardwareEntity hardware = new HardwareEntity();
-    hardware.setVendor("F5");
-    hardware.setValue(100);
+	pro.write();
 
-    ((Session)em.getDelegate()).saveOrUpdate(hardware);
 
     out.println("End ");
 

@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="apacheCamel" />
+        <module name="hibernate-manage" />
         <module name="mysql-ear" />
         <module name="mysql-ejb" />
         <module name="mysqlClient" />
@@ -17,6 +18,7 @@
     <bytecodeTargetLevel>
       <module name="apacheCamel" target="1.5" />
       <module name="gateway" target="1.5" />
+      <module name="hibernate-manage" target="1.5" />
       <module name="mysql" target="1.5" />
       <module name="mysql-ear" target="1.5" />
       <module name="mysql-ejb" target="6" />

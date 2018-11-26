@@ -15,6 +15,7 @@
         <module>mysql-ejb</module>
         <module>apacheCamel</module>
         <module>web</module>
+        <module>hibernate-manage</module>
     </modules>
     <dependencies>
 
