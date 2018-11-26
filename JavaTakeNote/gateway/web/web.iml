@@ -66,6 +66,7 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.google.guava:guava:25.0-jre" level="project" />
     <orderEntry type="module" module-name="hibernate-manage" />
     <orderEntry type="library" name="Maven: javax.jms:javax.jms-api:2.0.1" level="project" />
+    <orderEntry type="module" module-name="activemq" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:servlet-api:2.5" level="project" />
     <orderEntry type="library" name="Maven: dom4j:dom4j:1.6.1" level="project" />
     <orderEntry type="library" name="Maven: xml-apis:xml-apis:1.0.b2" level="project" />

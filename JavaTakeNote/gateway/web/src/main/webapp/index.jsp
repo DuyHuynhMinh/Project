@@ -2,7 +2,7 @@
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
-<%@ page import="com.ca.hibernatemanage.*"%>
+<%@ page import="com.ca.hibernatemanage.*,com.ca.activemq.*"%>
 <html>
 <head>
 <meta http-equiv="Content-Type"
@@ -13,9 +13,9 @@
 	<%
 	out.println("Test Server ");
 
-	ProcessData pro = new ProcessData();
+	OCMessageWildfly oc = new OCMessageWildfly();
 
-	pro.write();
+	oc.sendMessage();
 
 
     out.println("End ");

@@ -16,6 +16,7 @@
         <module>apacheCamel</module>
         <module>web</module>
         <module>hibernate-manage</module>
+        <module>activemq</module>
     </modules>
     <dependencies>
 

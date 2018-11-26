@@ -28,7 +28,7 @@ public class OCMessageWildfly {
     public static void main(String []arg) {
         System.out.println("Start");
         init();
-        sendMessage();
+        //sendMessage();
         receiveMessage();
         System.out.println("End");
 
@@ -49,6 +49,7 @@ public class OCMessageWildfly {
             e.printStackTrace();
         }
     }
+
     public static void sendMessage() {
         try {
             QueueSender sender = session.createSender( queue );
