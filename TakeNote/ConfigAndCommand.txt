@@ -4,6 +4,7 @@
 - NMR : Normalized Messages Router
 - JMX : Java Management Extension 
 - EAP : Enterprise Application Platform 
+- CBR : Content-Based Router
 
 
 - Maven : 

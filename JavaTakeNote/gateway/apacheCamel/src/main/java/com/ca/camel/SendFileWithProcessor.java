@@ -12,7 +12,7 @@ public class SendFileWithProcessor extends RouteBuilder {
                 System.out.println("Sending file : " + exchange.getIn().getHeader("CamelFileName"));
             }
         })
-                .to("activemq:queue:Inventory");
+                .to("activemq:queue:InventoryQueueUpdate");
     }
 
 }

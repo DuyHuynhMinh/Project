@@ -7,7 +7,6 @@ import javax.validation.constraints.NotNull;
 
 public class Message {
 
-
     @NotNull
     @Valid
     private Metadata metadata;

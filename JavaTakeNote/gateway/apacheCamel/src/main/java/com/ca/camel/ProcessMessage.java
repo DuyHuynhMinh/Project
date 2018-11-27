@@ -8,13 +8,12 @@ import com.ca.message.*;
 import java.io.IOException;
 
 public class ProcessMessage implements Processor {
+
     public void process(Exchange exchange) throws Exception {
 
-        //String message  = exchange.getIn().getBody(String.class);
-       // Message messageObj = convertToJson(message);
-
-      // exchange.getIn().setBody(messageObj);
-        System.out.println ("Recieving Message ");
+        String message  = exchange.getIn().getBody(String.class);
+        Message messageObj = convertToJson(message);
+        exchange.getIn().setBody(messageObj);
 
     }
 
@@ -25,8 +24,6 @@ public class ProcessMessage implements Processor {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
         return messageObj;
-
     }
 }
