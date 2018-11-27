@@ -16,9 +16,10 @@
 	OCMessageWildfly oc = new OCMessageWildfly();
 
 	oc.sendMessage();
+	oc.receiveMessage();
 
 
-    out.println("End ");
+    out.println("--> End ");
 
 	%>
 </body>
