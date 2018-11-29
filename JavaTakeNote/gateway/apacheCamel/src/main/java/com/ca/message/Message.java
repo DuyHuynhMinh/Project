@@ -20,7 +20,6 @@ public class Message {
         this.result = result;
     }
 
-
     public Metadata getMetadata() {
         return this.metadata;
     }

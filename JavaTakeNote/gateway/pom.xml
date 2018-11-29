@@ -17,6 +17,7 @@
         <module>web</module>
         <module>hibernate-manage</module>
         <module>activemq</module>
+        <module>design-pattern</module>
     </modules>
     <dependencies>
 

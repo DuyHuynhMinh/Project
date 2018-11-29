@@ -65,8 +65,6 @@
                     <target>6</target>
                 </configuration>
             </plugin>
-
-
 	     <plugin>
                 <artifactId>maven-ejb-plugin</artifactId>
                 <version>3.0.1</version>
@@ -78,6 +76,9 @@
 
 
 - Mysql : 
+
+-Linux :
+	COPY FILE LINUX : scp -r root@huydu02-E17704:/root/Downloads/SDN_latest /root/Downloads
 
 
 

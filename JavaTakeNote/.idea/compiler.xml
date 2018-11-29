@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="activemq" />
         <module name="apacheCamel" />
+        <module name="design-pattern" />
         <module name="hibernate-manage" />
         <module name="mysql-ear" />
         <module name="mysql-ejb" />
@@ -19,6 +20,7 @@
     <bytecodeTargetLevel>
       <module name="activemq" target="6" />
       <module name="apacheCamel" target="1.5" />
+      <module name="design-pattern" target="1.5" />
       <module name="gateway" target="1.5" />
       <module name="hibernate-manage" target="6" />
       <module name="mysql" target="1.5" />
