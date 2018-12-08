@@ -18,6 +18,7 @@
         <module>hibernate-manage</module>
         <module>activemq</module>
         <module>design-pattern</module>
+        <module>test</module>
     </modules>
     <dependencies>
 
