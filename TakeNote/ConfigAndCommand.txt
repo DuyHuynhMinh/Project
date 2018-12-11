@@ -7,6 +7,12 @@
 - CBR : Content-Based Router
 
 
+
+- Java CMD :
+    d:\CodeTest>javac d:\CodeTest\Test.java
+    d:\CodeTest>java Test
+
+
 - Maven : 
 
 	Link maven : http://repo1.maven.org/maven2/
