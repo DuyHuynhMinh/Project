@@ -83,11 +83,31 @@
 
 - Mysql : 
 
--Linux :
+-Linux (CENTOS_REDHAT) :
 	COPY FILE LINUX : scp -r root@huydu02-E17704:/root/Downloads/SDN_latest /root/Downloads
+	CHECK UPDATE : sudo yum check-update
+	UPDAE : sudo yum update
+	INSTALL JAVA : sudo yum install java-1.8.0-openjdk
+	ADD CURL COMMAND : sudo apt-get install curl
 
 
+-------------------------- ELK -----------------------------
+input {
+	file {
+		path => "/var/log/logstash/logstash-plain.log"
+		start_position => "beginning"
+	}
+}
 
+output {
+	elasticsearch {
+		hosts => ["huydu02-e20652:9200"]
+	}
+	stdout { 
+		codec => rubydebug 
+	}
+}
 
-
+./logstash -f /etc/logstash/conf.d/demo-pipeline.conf
+--------------------------------------------------------
 	
